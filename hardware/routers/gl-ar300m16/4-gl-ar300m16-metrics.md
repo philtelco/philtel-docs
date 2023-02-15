@@ -51,13 +51,36 @@ Once logged into the router, navigate to *System* --> *System*
 
 Now, give the router an appropriate `Hostname` based on the installation location and set the proper `Timezone` before pressing the *Save & Apply* button.
 
-![system](4-gl-ar300m16-metrics/4-gl-ar300m16-metrics-02.jpg)
+![hostname](4-gl-ar300m16-metrics/4-gl-ar300m16-metrics-02.jpg)
 
 ## Set up Port Forwarding
 
-Go to *Network* --> *Firewall* and the navigate to the *Port Forwards* tab. Press the button for *Add*. On the *General Settings* tab of the dialog, enter `openwrt_prometheus` into the *Name* field, `TCP` into the *Protocol* field, `philtel_fw` in the *Source Zone* field, `9100` in the *External port* field, `lan` in the *Destination zone* field, the IP address of the router (likely `192.168.1.1`) in the *Internal IP address* field, and `9100` in the *Internal port* field. Then press the *Save* button.
+You likely have already done this step but if not proceed below.
+
+Go to *Network* --> *Firewall*.
+
+![Firewall](4-gl-ar300m16-metrics/4-gl-ar300m16-metrics-03.jpg)
+
+Navigate to the *Port Forwards* tab and press the button for *Add*. 
+
+![Add](4-gl-ar300m16-metrics/4-gl-ar300m16-metrics-04.jpg)
+
+On the *General Settings* tab of the resulting dialog, enter:
+* `router_prometheus` into the *Name* field
+* `TCP` into the *Protocol* field
+* `philtel_fw` in the *Source zone* field
+* `9100` in the *External port* field
+* `lan` in the *Destination zone* field
+* `192.168.1.1` in the *Internal IP address* field
+* `9100` in the *Internal port* field. 
+
+Then press the *Save* button.
+
+![Add](4-gl-ar300m16-metrics/4-gl-ar300m16-metrics-05.jpg)
 
 Finally on the bottom of the *Port Forwards* page press the button for *Save & Apply*.
+
+![Save](4-gl-ar300m16-metrics/4-gl-ar300m16-metrics-06.jpg)
 
 ## Sources
 
