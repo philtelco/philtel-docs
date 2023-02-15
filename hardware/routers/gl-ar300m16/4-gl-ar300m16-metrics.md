@@ -43,7 +43,15 @@ Then, restart the service:
 
 ## Change Hostname
 
-Log in to the web UI for your router at `192.168.1.1` and navigate to *System* --> *System*. In the *General Settings* tab, update the *Hostname* field with a name akin to `openwrt-identifierhere`. At the bottom of the page press the button to *Save & Apply*.
+You likely have already done this step but if not, proceed below.
+
+Once logged into the router, navigate to *System* --> *System*
+
+![system](4-gl-ar300m16-metrics/4-gl-ar300m16-metrics-01.jpg)
+
+Now, give the router an appropriate `Hostname` based on the installation location and set the proper `Timezone` before pressing the *Save & Apply* button.
+
+![system](4-gl-ar300m16-metrics/4-gl-ar300m16-metrics-02.jpg)
 
 ## Set up Port Forwarding
 
