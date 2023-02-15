@@ -38,7 +38,11 @@ Finally, press the *Install* button and wait a few minutes for the firmware to b
 
 ![install](0-gl-ar300m16-flashing-openwrt/0-gl-ar300m16-flashing-openwrt-05.jpg)
 
-After a few minutes you should be able to access *luci* (OpenWRT's web interface) through http://192.168.1.1 and then you can proceed with the second flash.
+After a few minutes, the flash should be complete. You will see the status bar hit 100% and get a dialog stating the connection has been lost.
+
+![flash complete](0-gl-ar300m16-flashing-openwrt/0-gl-ar300m16-flashing-openwrt-05.5.jpg)
+
+At this point you should be able to access *luci* (OpenWRT's web interface) through http://192.168.1.1 and then you can proceed with the second flash.
 
 ### Second Flash
 
@@ -68,14 +72,24 @@ Uncheck the option for *Keep settings and retain the current configuration.* Fin
 
 ![install](0-gl-ar300m16-flashing-openwrt/0-gl-ar300m16-flashing-openwrt-10.jpg)
 
-Do not unplug anything during this process. Again, this may take a few minutes but after some time the web interface should come back up at https://192.168.1.1
+Do not unplug anything during this process. Again, this may take a few minutes but after some time the web interface should come back up in your current browser tab and prompt you to log in again.
 
 ## Set root Password
 
-Before we wrap up, be sure to set the root password. Navigate to https://192.168.1.1 to access the router and log in using `root` as the username and password. Once logged in, navigate to *System* --> *Administration*. 
+Next, we need to set the root password. Navigate to https://192.168.1.1 to access the router and log in using `root` as the username and password. Once logged in, navigate to *System* --> *Administration*. 
 
 ![system administration](0-gl-ar300m16-flashing-openwrt/0-gl-ar300m16-flashing-openwrt-11.jpg)
 
 Then on the *Router Password* tab, enter a password and a confirmation before pressing the *Save* button.
 
 ![change password](0-gl-ar300m16-flashing-openwrt/0-gl-ar300m16-flashing-openwrt-12.jpg)
+
+## Set Hostname and Timezone
+
+Once logged into the router, navigate to *System* --> *System*
+
+![system](0-gl-ar300m16-flashing-openwrt/0-gl-ar300m16-flashing-openwrt-13.jpg)
+
+Now, give the router an appropriate `Hostname` based on the installation location and set the proper `Timezone` before pressing the *Save & Apply* button.
+
+![system](0-gl-ar300m16-flashing-openwrt/0-gl-ar300m16-flashing-openwrt-14.jpg)

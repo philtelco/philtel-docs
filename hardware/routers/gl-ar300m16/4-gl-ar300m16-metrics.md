@@ -41,6 +41,10 @@ Then, restart the service:
 /etc/init.d/prometheus-node-exporter-lua restart
 ```
 
+## Change Hostname
+
+Log in to the web UI for your router at `192.168.1.1` and navigate to *System* --> *System*. In the *General Settings* tab, update the *Hostname* field with a name akin to `openwrt-identifierhere`. At the bottom of the page press the button to *Save & Apply*.
+
 ## Set up Port Forwarding
 
 Go to *Network* --> *Firewall* and the navigate to the *Port Forwards* tab. Press the button for *Add*. On the *General Settings* tab of the dialog, enter `openwrt_prometheus` into the *Name* field, `TCP` into the *Protocol* field, `philtel_fw` in the *Source Zone* field, `9100` in the *External port* field, `lan` in the *Destination zone* field, the IP address of the router (likely `192.168.1.1`) in the *Internal IP address* field, and `9100` in the *Internal port* field. Then press the *Save* button.
