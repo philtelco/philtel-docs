@@ -24,8 +24,46 @@ On the following dialog the defaults should be enough to establish connection, s
 
 ![save the network](1-gl-ar300m16-routed-client/1-gl-ar300m16-routed-client-05.jpg)
 
-NOTE: If you want to have multiple WAN networks, repeat the above steps but then go to *Interfaces* --> *Add new interface* and in the resulting dialog supply a unique network `Name` and choose your newly created interface under `Device` before pressing the *Create Interface* button. Afterwards, press the *Save & Apply* button. NOTE: You may need to disable/enable the OpenVPN connection or restart the WireGuard interface after this step depending on which VPN solution you are using.
-
 After the dialog closes, press the *Save & Apply* button and after a few seconds of waiting the router should connect to the network and display connection status in the *Associated Stations* section of the page.
 
 ![apply changes](1-gl-ar300m16-routed-client/1-gl-ar300m16-routed-client-06.jpg)
+
+## Add a Second Network
+
+If you want to have multiple WWAN networks defined, proceed to *Network* --> *Wireless*. 
+
+![Go to wireless settings](1-gl-ar300m16-routed-client/1-gl-ar300m16-routed-client-01.jpg)
+
+Scroll down to any currently enabled WWAN network and press the *Disable* button next to it.
+
+![Disable](1-gl-ar300m16-routed-client/1-gl-ar300m16-routed-client-07.jpg)
+
+Now press the *Scan* button next to the entry for `radio0`.
+
+![Scan](1-gl-ar300m16-routed-client/1-gl-ar300m16-routed-client-07.5.jpg)
+
+Find the new wireless network you want to connect to and press the *Join Network* button to the right of it.
+
+![Join Network](1-gl-ar300m16-routed-client/1-gl-ar300m16-routed-client-08.jpg)
+
+In the resulting dialog, enter a name in the `Name of the new network` field and enter the network password in the `WPA passphrase` field before pressing the *Submit* button.
+
+![New Network](1-gl-ar300m16-routed-client/1-gl-ar300m16-routed-client-09.jpg)
+
+In the next dialog, press the *Save* button.
+
+![New Network](1-gl-ar300m16-routed-client/1-gl-ar300m16-routed-client-10.jpg)
+
+Back on the *Wireless Overview* page, press the *Save & Apply* button.
+
+![Save and Apply](1-gl-ar300m16-routed-client/1-gl-ar300m16-routed-client-11.jpg)
+
+The new network should connect!
+
+If you already have OpenVPN running during this step, you will want to either power cycle the router, or by stopping and starting the OpenVPN connection. To do the latter, navigate to *VPN* --> *OpenVPN*.
+
+![OpenVPN](1-gl-ar300m16-routed-client/1-gl-ar300m16-routed-client-12.jpg)
+
+On the OpenVPN page, press the *stop* button in the row for our OpenVPN instance. After it has stopped, press the *start* button that will replace it in the same row.
+
+![stop and start](1-gl-ar300m16-routed-client/1-gl-ar300m16-routed-client-12.jpg)
