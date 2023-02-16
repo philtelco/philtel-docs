@@ -1,6 +1,6 @@
 # Franklin T9 SIM Unlock
 
-In the PhilTel demo rig, we make use of an older Franklin T9 LTE hotspot for Internet access. These hotspots are widely available as they were given out for free by T-Mobile and are able to be unlocked and hacked to support multiple carriers provided they are operating in GSM bands.
+Let's do a SIM unlock so we can use non-TMobile SIMs.
 
 Note that the below content is sourced heavily from the following two web pages:
 * [Rooting and Unlocking the T-Mobile T9 (Franklin Wireless R717)](https://snt.sh/2020/09/rooting-the-t-mobile-t9-franklin-wireless-r717/) 

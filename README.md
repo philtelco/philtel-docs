@@ -15,8 +15,9 @@ Internal guides and documentation
 
 ### Hotspots
 
-- [SIM Unlock a Franklin T9](hardware/hotspots/franklin-t9/0-franklin-t9-sim-unlock.md)
-- [Firmware Downgrade a Franklin T9](hardware/hotspots/franklin-t9/1-franklin-t9-firmware-downgrade.md)
+- [Franklin T9 Factory Reset and SSID Config](hardware/hotspots/franklin-t9/0-franklin-t9-factory-reset-and-ssid.md)
+- [SIM Unlock a Franklin T9](hardware/hotspots/franklin-t9/1-franklin-t9-sim-unlock.md)
+- [Firmware Downgrade a Franklin T9](hardware/hotspots/franklin-t9/2-franklin-t9-firmware-downgrade.md)
 
 
 ## Software
