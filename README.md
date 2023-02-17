@@ -19,6 +19,10 @@ Internal guides and documentation
 - [SIM Unlock a Franklin T9](hardware/hotspots/franklin-t9/1-franklin-t9-sim-unlock.md)
 - [Firmware Downgrade a Franklin T9](hardware/hotspots/franklin-t9/2-franklin-t9-firmware-downgrade.md)
 
+### ATAs
+
+- [Grandstream HT801 Factory Reset](hardware/atas/ht801/0-ht801-factory-reset.md)
+
 
 ## Software
 
