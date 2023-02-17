@@ -22,6 +22,7 @@ Internal guides and documentation
 ### ATAs
 
 - [Grandstream HT801 Factory Reset](hardware/atas/ht801/0-ht801-factory-reset.md)
+- [Grandstream HT801 Firmware Downgrade](hardware/atas/ht801/1-ht801-firmware-downgrade.md)
 
 
 ## Software
