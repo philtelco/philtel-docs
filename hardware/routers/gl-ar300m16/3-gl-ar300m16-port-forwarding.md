@@ -4,7 +4,7 @@ We may want to get into our router or ATA remotely so it is a good idea to port 
 
 ## Setting an IP Reservation
 
-Navigate to the web interface at http://192.168.1.1 and go to *Network* --> *DHCP and DNS*.
+Navigate to the web interface at <http://192.168.1.1> and go to *Network* --> *DHCP and DNS*.
 
 ![DHCP and DNS](3-gl-ar300m16-port-forwarding/3-gl-ar300m16-port-forwarding-01.jpg)
 

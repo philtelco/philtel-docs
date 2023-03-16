@@ -66,4 +66,4 @@ If you already have OpenVPN running during this step, you will want to either po
 
 On the OpenVPN page, press the *stop* button in the row for our OpenVPN instance. After it has stopped, press the *start* button that will replace it in the same row.
 
-![stop and start](1-gl-ar300m16-routed-client/1-gl-ar300m16-routed-client-12.jpg)
+![stop and start](1-gl-ar300m16-routed-client/1-gl-ar300m16-routed-client-13.jpg)

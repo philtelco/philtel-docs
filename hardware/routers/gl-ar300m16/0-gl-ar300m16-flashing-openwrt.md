@@ -4,9 +4,9 @@ The GL-AR300M16 is a low cost "travel router" manufactured by GL.iNet that repla
 
 This device seems to be cost-effective at around $27 USD. This is around the same price as a used Archer A7/C7, which is a great router, but the GL device is much less power-hungry and incredibly small.
 
-Note: This device is very different than the GL-MT300N-V2 (Mango) device even though they are offered at the same price point and seem to have an identical formfactor. Thile the GL-AR300M16 has a well supported Qualcomm Atheros QCA9531 chipset, the GL-MT300N-V2 has a MediaTek MTK7628NN chipset.
+Note: This device is very different than the GL-MT300N-V2 (Mango) device even though they are offered at the same price point and seem to have an identical form-factor. The the GL-AR300M16 has a well supported Qualcomm Atheros QCA9531 chipset, the GL-MT300N-V2 has a MediaTek MTK7628NN chipset.
 
-Official site: https://store.gl-inet.com/products/gl-ar300m16-mini-smart-router
+Official site: <https://store.gl-inet.com/products/gl-ar300m16-mini-smart-router>
 
 ## Flashing OpenWRT
 
@@ -28,7 +28,7 @@ Use the left navigation to continue to the *Upgrade* page and choose the tab for
 
 ![navigate to the upgrade page](0-gl-ar300m16-flashing-openwrt/0-gl-ar300m16-flashing-openwrt-03.jpg)
 
-We will now want to flash an OpenWRT `initramfs` firmware image to the router so we need to download one. At the time of writing, https://downloads.openwrt.org/releases/22.03.2/targets/ath79/generic/openwrt-22.03.2-ath79-generic-glinet_gl-ar300m16-initramfs-kernel.bin was used.  After downloading the file, drag and drop it into the upload section on the page. This may take around ten seconds to upload.
+We will now want to flash an OpenWRT `initramfs` firmware image to the router so we need to download one. At the time of writing, <https://downloads.openwrt.org/releases/22.03.2/targets/ath79/generic/openwrt-22.03.2-ath79-generic-glinet_gl-ar300m16-initramfs-kernel.bin> was used.  After downloading the file, drag and drop it into the upload section on the page. This may take around ten seconds to upload.
 
 ![drop the new firmware file](0-gl-ar300m16-flashing-openwrt/0-gl-ar300m16-flashing-openwrt-04.jpg)
 
@@ -42,7 +42,7 @@ After a few minutes, the flash should be complete. You will see the status bar h
 
 ![flash complete](0-gl-ar300m16-flashing-openwrt/0-gl-ar300m16-flashing-openwrt-05.5.jpg)
 
-At this point you should be able to access *luci* (OpenWRT's web interface) through http://192.168.1.1 and then you can proceed with the second flash.
+At this point you should be able to access *luci* (OpenWRT's web interface) through <http://192.168.1.1> and then you can proceed with the second flash.
 
 ### Second Flash
 
@@ -58,7 +58,7 @@ In the dashboard, navigate to *System* --> *Backup / Flash Firmware*.
 
 Scroll down to the *Flash new firmware image* section.
 
-We will now want to flash an OpenWRT `squashfs` firmware image to the router so we need to download one. At the time of writing, we will use https://downloads.openwrt.org/releases/22.03.2/targets/ath79/generic/openwrt-22.03.2-ath79-generic-glinet_gl-ar300m16-squashfs-sysupgrade.bin
+We will now want to flash an OpenWRT `squashfs` firmware image to the router so we need to download one. At the time of writing, we will use <https://downloads.openwrt.org/releases/22.03.2/targets/ath79/generic/openwrt-22.03.2-ath79-generic-glinet_gl-ar300m16-squashfs-sysupgrade.bin>
 
 Press the button for *Flash image...*.
 
@@ -76,7 +76,7 @@ Do not unplug anything during this process. Again, this may take a few minutes b
 
 ## Set root Password
 
-Next, we need to set the root password. Navigate to https://192.168.1.1 to access the router and log in using `root` as the username and password. Once logged in, navigate to *System* --> *Administration*. 
+Next, we need to set the root password. Navigate to <https://192.168.1.1> to access the router and log in using `root` as the username and password. Once logged in, navigate to *System* --> *Administration*. 
 
 ![system administration](0-gl-ar300m16-flashing-openwrt/0-gl-ar300m16-flashing-openwrt-11.jpg)
 

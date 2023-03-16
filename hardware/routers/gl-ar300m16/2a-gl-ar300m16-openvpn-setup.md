@@ -125,7 +125,7 @@ while sleep 25; do
 done
 ```
 
-Next, made it executable:
+Next, make it executable:
 
 ```
 # chmod +x /etc/openvpn/restart_openvpn.sh
