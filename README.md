@@ -35,3 +35,9 @@ Internal guides and documentation
 ## Zine
 
 - [Zine Printing](zine/zine-printing/zine-printing.md)
+
+
+## Projects
+
+- [Protel ExpressNet](projects/protel-expressnet/protel-expressnet.md)
+- [Retro Software](projects/retro-software/retro-software.md)
