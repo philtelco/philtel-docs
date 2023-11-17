@@ -12,6 +12,7 @@ Internal guides and documentation
 - [Setting up OpenVPN on the GL-AR300M16](hardware/routers/gl-ar300m16/2a-gl-ar300m16-openvpn-setup.md)
 - [Port Forwarding on the GL-AR300M16](hardware/routers/gl-ar300m16/3-gl-ar300m16-port-forwarding.md)
 - [Metrics (Node Exporter) on the GL-AR300M16](hardware/routers/gl-ar300m16/4-gl-ar300m16-metrics.md)
+- [Remote Logging on the GL-AR300M16](hardware/routers/gl-ar300m16/5-gl-ar300m16-logging.md)
 
 ### Hotspots
 
@@ -23,13 +24,15 @@ Internal guides and documentation
 
 - [Grandstream HT801 Factory Reset](hardware/atas/ht801/0-ht801-factory-reset.md)
 - [Grandstream HT801 Firmware Downgrade](hardware/atas/ht801/1-ht801-firmware-downgrade.md)
+- [Grandstream HT801 Logging](hardware/atas/ht801/2-ht801-logging.md)
 
 
 ## Software
 
 - [Configuring an OpenVPN Server](software/openvpn-server.md)
 - ~~[Configuring a WireGuard Server](software/wireguard-server.md)~~
-- [Configuring a Prometheus Server](software/prometheus-server.md)
+- [Configuring a Prometheus Server for Grafana](software/prometheus-server.md)
+- [Configuring an RSyslog/Promtail Server for Grafana Loki](software/promtail-server.md)
 - [Configuring Node Exporter](software/node-exporter.md)
 
 ## Zine
