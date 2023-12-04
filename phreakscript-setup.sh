@@ -1,5 +1,5 @@
 #!/bin/bash
-# A wrapper for phreakscript (which is itself a wrapper
+# A wrapper for phreakscript (which is itself a wrapper)
 
 # This assumes you have your reservations in the online portal and have your server info set up, but no software installed on said server
 # Use this guide for reference, https://portal.phreaknet.org/quickstart
@@ -7,11 +7,14 @@
 # Your Interlinked.us API Key
 # Get it here, https://interlinked.us/account/integration
 API_KEY=YOURKEYHERE
+
 # Bell System-style acronym for Common Language Location Identifier. The official ID of your PBX
 # It should match what is here, https://portal.phreaknet.org/switches
 CLLI=HSTNTXMOCG0
+
 # Direct Inward System Access, the direct number into your switch typically your thousands-block followed by 111, like 5552111
 DISA=5552111
+
 #IAX Password, we assume you left the username as the default "phreaknet"
 # It should match what is here, https://portal.phreaknet.org/users
 IAX2PASSWORD=YOURPASSWORDHERE
