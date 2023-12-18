@@ -282,7 +282,33 @@ $ sudo systemctl restart promtail
 Back in Grafana.net, use the left navigation to go to *Explore*. On this page you can query the logs as they are now being ingested into Loki.
 
 
+### Configure Alerts
+
+Grafana Cloud can alert us for specific events captured in our logs (or their absence). In this scenario, we will set up alerting if a device does not generate logs within the past hour, signifying it is down.
+ 
+In Grafana, use the left navigation to go to *Alerts & IRM* --> *Alerting*. In the left navigation, navigate to *Contact points*. Click on the *Edit* icon to the left of `grafana-default-email`. On the resulting page, enter `metrics@philtel.org` into the `Addresses` field and press the *Save contact point* button.
+
+In the left navigation, navigate to *Alert rules*. On the *Alert rules* page, press the button for *+ New alert rule*.
+
+On the *New alert rule* page, in the *Enter alert rule name* section, enter a name for the device in the `Name` field. 
+
+next, we will need a query to check for the absence of logs for a device over the last hour. We will use device `10.9.0.101` which is Mike's Test ATA. In the *Define query and alert condition* section, in the query builder, select `grafanacloud-philtel-logs` as the data source and use the following query for our device:
+
+```
+absent_over_time({hostname="10.9.0.101"} [1h])
+```
+
+In the *Set evaluation behavior* section, select `Alerting Rules` as the `Folder`. Press the button for *+New evaluation group* and in the resulting modal, enter `Uptime Evaluation Group` into the `Evaluation group name` field, and `1h` into the `Evaluation interval` field. Then press the *Create* button. Back in the *Set evaluation behavior* section, choose the newly created `Uptime Evaluation Group` option in the `Evaluation group` field. In the `Pending period` field, enter `1h5m`. Expand the heading for *Configure no data and error handling*. Select `OK` for the `Alert state if no data or all values are null` field and select `Error` for the `Alert state if execution error or timeout` field.
+
+In the *Add annotations* section, enter `Mike Test - ATA Down` in the `Summary` field and `ATA "Mike Test" has not generated logs for 1h.` in the `Description` field.
+
+Now press the button for *Save rule and exit*. The *Alert rules* page will now list the newly created rule. This rule will execute every hour and check to see if the device has generated logs. If it has not, it will send an email to the contact point.
+
+
 ## Sources
 
 * <https://alexandre.deverteuil.net/post/syslog-relay-for-loki/>
 * <https://forums.grandstream.com/t/gxw42xx-ht8xx-and-rsyslog-config-on-ubuntu-8-2102-0-2ubuntu1/52815>
+* <https://grafana.com/docs/grafana/latest/alerting/alerting-rules/create-mimir-loki-managed-rule/>
+* <https://promlabs.com/promql-cheat-sheet/>
+* <https://thriftly.io/docs/components/Thriftly-Deployment-Beyond-the-Basics/Metrics-Prometheus/Creating-Receiving-Email-Alerts.html>
