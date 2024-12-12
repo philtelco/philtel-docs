@@ -33,6 +33,7 @@ Internal guides and documentation
 - ~~[Configuring a WireGuard Server](software/wireguard-server.md)~~
 - [Configuring a Prometheus Server for Grafana](software/prometheus-server.md)
 - [Configuring an RSyslog/Promtail Server for Grafana Loki](software/promtail-server.md)
+  - [Configuring RSyslog with TLS](software/rsyslog-tls.md)
 - [Configuring Node Exporter](software/node-exporter.md)
 
 ## Zine
