@@ -70,3 +70,9 @@ Restart `rsyslog`:
 ```
 $ sudo systemctl restart rsyslog
 ```
+
+## Sources
+
+* https://stackoverflow.com/questions/52831862/rsyslog-create-two-listeners-with-and-without-tls-with-omfile-as-output-possi
+* https://www.rsyslog.com/doc/tutorials/tls_cert_server.html
+* https://github.com/certbot/certbot/issues/8368
