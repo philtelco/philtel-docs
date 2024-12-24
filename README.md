@@ -30,11 +30,12 @@ Internal guides and documentation
 ## Software
 
 - [Configuring an OpenVPN Server](software/openvpn-server.md)
-- ~~[Configuring a WireGuard Server](software/wireguard-server.md)~~
+- [Configuring a WireGuard Server](software/wireguard-server.md)
 - [Configuring a Prometheus Server for Grafana](software/prometheus-server.md)
 - [Configuring an RSyslog/Promtail Server for Grafana Loki](software/promtail-server.md)
-  - [Configuring RSyslog with TLS](software/rsyslog-tls.md)
+- [Configuring RSyslog with TLS](software/rsyslog-tls.md)
 - [Configuring Node Exporter](software/node-exporter.md)
+- [Exposing the Avocent MPU108E KVM](software/exposing-avocnt-mpu108e-kvm.md)
 
 ## Zine
 
