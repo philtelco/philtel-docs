@@ -64,7 +64,7 @@ stream {
 Our inside server will connect via `wireguard` to an outside server that will face the Internet. We want to open the ports `nginx` is listening on to the interface that handles this connection.
 
 ```
-$ sudo  cat /etc/iptables/rules.v4 | grep wg0
+$ sudo cat /etc/iptables/rules.v4 | grep wg0
 -A INPUT -i wg0 -m state --state RELATED,ESTABLISHED -j ACCEPT
 -A INPUT -i wg0 -p tcp -m tcp --dport 8080 -j ACCEPT
 -A INPUT -i wg0 -p tcp -m tcp --dport 4206 -j ACCEPT
@@ -231,7 +231,7 @@ $ npm init
 We have our `package.json`:
 
 ```
-$ cat package.json`
+$ cat package.json
 {
   "name": "access-manager",
   "version": "1.0.0",
@@ -350,8 +350,7 @@ $ sudo systemctl start access-manager
 Make sure that ports 80/443 are open:
 
 ```
-$ cat /etc/iptables/rules.v4
-...
+$ sudo cat /etc/iptables/rules.v4 | grep ACCEPT
 -A INPUT -p tcp -m tcp --dport 80 -j ACCEPT
 -A INPUT -p tcp -m tcp --dport 443 -j ACCEPT
 ```
