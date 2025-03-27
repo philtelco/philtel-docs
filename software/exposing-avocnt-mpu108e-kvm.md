@@ -197,7 +197,7 @@ Upon cert renewals `nginx` should be reloaded automatically.
 
 Users will be granted access to the KVM (in addition to the KVM's built-in user/password auth) via credentials added to `.htpasswd`.
 
-We will create this file by generating a password for our first user. Note the flags used here. `-c` is used to create, `-B` is used to specify `bcrypt` hashing, and `-C 14` sets complexity. A value of `14` for complexity means each authentication attempt should take about one second which significantly slows down brute-force attacks. Alternatively (or supplementally), we could leverage `fail2ban` to ban clients after too many incorrect attempts.
+We will create this file by generating a password for our first user. Note the flags used here. `-c` is used to create, `-B` is used to specify `bcrypt` hashing, and `-C 14` sets complexity. A value of `14` for complexity means each authentication attempt should take about one second which significantly slows down brute-force attacks. Alternatively (or supplementally), [we could leverage fail2ban](https://serverfault.com/questions/421046/how-to-limit-nginx-auth-basic-re-tries) to ban clients after too many incorrect attempts.
 
 ```
 $ sudo htpasswd -c -B -C 14 /etc/nginx/.htpasswd famicoman
