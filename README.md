@@ -26,6 +26,11 @@ Internal guides and documentation
 - [Grandstream HT801 Firmware Downgrade](hardware/atas/ht801/1-ht801-firmware-downgrade.md)
 - [Grandstream HT801 Logging](hardware/atas/ht801/2-ht801-logging.md)
 
+### Misc
+
+- [Payphone Notes](hardware/payphone-notes.md)
+- [WE 236 3-Slot Noes](hardware/we-236-notes.md)
+
 
 ## Software
 
